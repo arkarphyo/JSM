@@ -1,0 +1,281 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width: 100%;
+	background: #FFF;
+	z-index:2;
+}
+
+/*--------------------------------------TOP LAYOUT------------------------------------------------*/
+
+
+@media(min-width: 900px){
+	/*-------------------MENBER_LOGIN_LAYOUT------------------------------*/
+	#login_wrapper{
+		top:0;
+		position:fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,0.9);
+		padding:0;
+		margin:0;
+		z-index: 99999;
+		display:block;
+	}
+
+	#login_layout{
+		width: 40%;
+		height: 250px;
+		box-shadow: 0px 0px 5px 0.3px rgba(0,0,0,0.5)inset;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 20% auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		padding: 1px;
+		border-radius: 1%;
+		background: linear-gradient(135deg, rgba(9,80,180,0.9),rgba(9,80,180,0.8),rgba(9,80,180,0.7), transparent);
+	}
+
+	
+	.top_bar{
+		background-color: rgba(6, 100, 180, 0.8);
+		position: relative;
+		height: 45px;
+		box-shadow: 0px 0.5px 2px 1px rgba(0,0,0,0.5);
+		text-shadow: 0px 2px 0.5px rgba(0,0,0,0.5);
+	}
+	.back_btn{
+		float:left;
+		color: #FFF;
+		font-size: 5em;
+		padding: 14px;
+		cursor:pointer;
+	}
+	.back_btn:active{
+		background-color: rgba(0,0,0,0.1);
+		border-radius: 100%;
+		text-shadow: 0px 1px 0.5px rgba(0,0,0,0.5);
+	}
+
+	.login_main_title{
+		padding: 10px;
+		background-color: transparent;
+		z-index: 9;
+		color: #FFF;
+		text-align: center;
+	}
+
+	#login_box_title{
+		color: #DDD;
+		text-shadow: 1px 1px 0.5px rgba(0,0,0,0.4);
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+
+	.login_field{
+		width: 50%;
+		margin-top: 1%;
+		padding: 5px;
+		margin-left: 25%;
+		margin-right: 25%;
+		border-radius: 100px;
+		border: 0px;
+		color: rgba(225,225,225,0.9);
+		background: linear-gradient(0deg, rgba(10, 50, 80, 1), rgba(3, 80, 120, 0.8), rgba(10, 50, 120, 0.5), transparent);
+		text-shadow: 0px 0.2px 0.2px rgba(255,255,255,0.8);
+		font-weight: lighter;
+		float: left;
+	}
+	
+	.login_submit{
+		width: 20%;
+		clear:both;
+		background: linear-gradient(180deg, rgba(255,255,255, 0.3), transparent, rgba(3, 80,90,0.5), transparent);
+		border: 0px transparent;
+		margin-top: 5%;
+		cursor: pointer;
+		padding: 5px;
+		box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.5);
+		color: #FFF;
+		font-weight:bold;
+		text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+		border-radius: 5%;
+	}
+	.login_submit:hover{
+		box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+		transition: 0.1s ease-in-out;
+		background: linear-gradient(360deg, rgba(255,255,255, 0.3), transparent, rgba(3, 80,90,0.5), transparent);
+	}
+	#login_close_btn{
+		border-radius: 5%;
+		list-style:none;
+/*		box-shadow: 0px 0px 1px 1px rgba(190,43,43,0.5)inset;*/
+		cursor: pointer;
+		color: rgb(190,43,43);
+		float:right;
+		padding: 2px;
+	}
+	#login_close_btn:hover{
+		box-shadow: 0px 0px 10px 5px rgba(9,100,110,0.5)inset;
+		transition: 0.1s ease-in-out;
+	}
+	#login_close_btn:active{
+		box-shadow: 0px 0px 10px 5px rgba(180,10,58,0.8)inset;
+		transition: 0.1s ease-in-out;
+		color: #DDD;
+	}
+	#member_login_forget_password{
+		padding-bottom: 13%;
+		text-decoration: none;
+		color: #FFF;
+		font-size: 1em;
+		text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+
+}
+
+
+
+/*Max Width >>>>>>>>>>>>> 900px --------------------------------------------*/
+@media(max-width: 900px){
+	/*-------------------MENBER_LOGIN_LAYOUT------------------------------*/
+	#login_wrapper{
+		top:0;
+		position:fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		padding:0;
+		margin:0;
+		z-index: 99999;
+		display:block;
+	}
+
+	#login_layout{
+		width: 99%;
+		height: 250px;
+		box-shadow: 0px 1px 3px 0.3px rgba(0,0,0,0.1);
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 1%;
+		padding-top: 10%;
+		padding-bottom: 10%;
+		border-radius: 1%;
+		background:rgba(6, 100, 200, 0);
+		z-index: 999;
+	}
+	.top_bar{
+		background-color: rgba(6, 100, 180, 0.8);
+		position: relative;
+		height: 45px;
+		box-shadow: 0px 0.5px 2px 1px rgba(0,0,0,0.5);
+		text-shadow: 0px 2px 0.5px rgba(0,0,0,0.5);
+	}
+	.back_btn{
+		float:left;
+		color: #FFF;
+		font-size: 5em;
+		padding: 14px;
+		cursor:pointer;
+	}
+	.back_btn:active{
+		background-color: rgba(0,0,0,0.1);
+		border-radius: 100%;
+		text-shadow: 0px 1px 0.5px rgba(0,0,0,0.5);
+	}
+
+	.login_main_title{
+		padding: 10px;
+		text-align: center;
+		background-color: transparent;
+		z-index: 9;
+		color: #FFF;
+	}
+	#login_box_title{
+		color: rgba(255,255, 255, 0.9);
+		text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.4);
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+	.login_field{
+		width: 60%;
+		background: rgba(0,0,0,0.1);
+		color:#FFF;
+		margin-top: 5%;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-left: 20%;
+		margin-right: 20%;
+		border-radius: 20px;
+		float: left;
+		box-shadow: 0px 0.5px 3px 0.5px rgba(0,0,0,0.8);
+		border: 0px solid silver;
+	}
+
+
+	.login_field:focus{
+		outline: none;
+		background: rgba(0,0,0,0.1);
+		color:#FFF;
+		box-shadow: 0px 0.5px 3px 0.5px rgba(0,0,0,0.5)inset;
+	}
+	.login_submit{
+		width: 30%;
+		clear:both;
+		background: rgba(0,0,0,0.1);
+		border: 0px transparent;
+		margin-top: 10%;
+		cursor: pointer;
+		padding: 8px;
+		box-shadow: 0px 1px 3px 0.5px rgba(0,0,0,0.5);
+		color: #FFF;
+		font-weight:bold;
+		text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.5);
+		border-radius: 100px;
+	}
+	.login_submit:hover{
+		transition: 0.1s ease-in-out;
+		background: rgba(9,100,147,0.3);
+		box-shadow: 0px 0.5px 3px 0.5px rgba(0,0,0,0.5)inset;
+	}
+	#login_close_btn{
+		border-radius: 5%;
+		list-style:none;
+		box-shadow: 0px 0px 1px 1px rgba(190,43,43,0.5)inset;
+		cursor: pointer;
+		color: rgb(190,43,43);
+		float:right;
+		padding: 2px;
+	}
+	#login_close_btn:hover{
+		box-shadow: 0px 0px 10px 5px rgba(9,100,110,0.5)inset;
+		transition: 0.1s ease-in-out;
+	}
+	#login_close_btn:active{
+		box-shadow: 0px 0px 10px 5px rgba(180,10,58,0.8)inset;
+		transition: 0.1s ease-in-out;
+		color: #DDD;
+	}
+	#member_login_forget_password{
+		padding-bottom: 13%;
+		text-decoration: none;
+		color: #FFF;
+		font-size: 1em;
+		text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+
+}
+
+
+
+
